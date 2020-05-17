@@ -1,20 +1,35 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Work from "../components/work"
+import About from "../components/about"
+import Contact from "../components/contact"
+
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const Section = styled.section`
+  padding: 25vmin 0;
+  min-height: 100vh;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 10vmin 0;
+  }
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Section id="work">
+      <Work />
+    </Section>
+    <Section id="about">
+      <About />
+    </Section>
+    <Section id="contact" style={{ minHeight: "100%" }}>
+      <Contact />
+    </Section>
   </Layout>
 )
 
