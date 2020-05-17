@@ -5,19 +5,20 @@ import Group from "./Group"
 
 const Hero = () => {
   const [xy, set] = useState([0, 0])
-
+  const windowGlobal = typeof window !== "undefined" && window
   return (
     <Canvas
-      pixelRatio={window.devicePixelRatio}
+      pixelRatio={windowGlobal ? window.devicePixelRatio : undefined}
       resize={{ scroll: false }}
       style={{
         position: `absolute`,
       }}
       onMouseMove={e => {
-        set([
-          (e.clientX / window.innerWidth) * 2 - 1,
-          (e.clientY / window.innerWidth) * 2 - 1,
-        ])
+        windowGlobal &&
+          set([
+            (e.clientX / window.innerWidth) * 2 - 1,
+            (e.clientY / window.innerWidth) * 2 - 1,
+          ])
       }}
     >
       <Group xy={xy} />
