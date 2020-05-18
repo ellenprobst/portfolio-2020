@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ellen Probst`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Ellen Probst is a web developer located in Toronto, Canada. Mentor/instructor and creative developer.`,
     author: `Ellen Probst`,
   },
   plugins: [
