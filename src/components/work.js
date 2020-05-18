@@ -49,7 +49,7 @@ const Work = () => (
 
     <Text>
       I'm a web developer currently working at{" "}
-      <LinkText href="https://www.twg.io" target="_blank">
+      <LinkText href="https://www.twg.io" target="_blank" rel="noreferrer">
         TWG
       </LinkText>
       . I love building clean and user friendly experiences. I work a lot with
@@ -64,6 +64,7 @@ const Work = () => (
       style={{ fontSize: "1.5rem" }}
       href="https://codepen.io/EllenProbst"
       target="_blank"
+      rel="noreferrer"
     >
       See my Codepens <AngleRight />
     </LinkText>

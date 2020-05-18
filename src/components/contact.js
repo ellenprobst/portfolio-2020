@@ -39,7 +39,11 @@ const Contact = () => (
         <a href="mailto:hello@ellenprobst.com">hello@ellenprobst.com</a>
       </StyledHeader>
       <div>
-        <StyledLink href="https://codepen.io/EllenProbst" aria-label="Codepen">
+        <StyledLink
+          href="https://codepen.io/EllenProbst"
+          rel="noreferrer"
+          aria-label="Codepen"
+        >
           <CodepenIcon />
         </StyledLink>
         <StyledLink

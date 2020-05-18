@@ -9,7 +9,6 @@ const Footer = styled.footer`
   color: #afbad2;
   font-size: 12;
   text-align: center;
-  opacity: 0.6;
 `
 
 const Wrapper = styled.div`
