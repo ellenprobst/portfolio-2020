@@ -1,12 +1,12 @@
 import React from "react"
 import { Planet } from "react-kawaii"
 import flatMountains from "../images/flat-mountains.svg"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
 const NotFoundContainer = styled.div`
-  background-image: url(${flatMountains}); /* background by SVGBackgrounds.com */
+  background-image: url(${flatMountains});
   height: 100vh;
   width: 100vw;
   background-attachment: fixed;
@@ -24,12 +24,12 @@ const TextWrapper = styled.div`
   width: fit-content;
 `
 
-const StyledLink = styled(Link)`
-  border: 2px solid purple;
-  border-radius: 3px;
-  padding: 5px 15px;
-  background: purple;
-`
+// const StyledLink = styled(Link)`
+//   border: 2px solid purple;
+//   border-radius: 3px;
+//   padding: 5px 15px;
+//   background: purple;
+// `
 
 const NotFoundPage = () => (
   <NotFoundContainer>
@@ -40,7 +40,6 @@ const NotFoundPage = () => (
     <TextWrapper>
       <h1>NOT FOUND</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      <StyledLink to="/">Go back to the homepage</StyledLink>
     </TextWrapper>
   </NotFoundContainer>
 )
