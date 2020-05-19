@@ -13,34 +13,34 @@ const NotFoundContainer = styled.div`
   background-size: cover;
   padding: 0 25px;
 `
-const PlanetWrapper = styled.div`
-  margin: 0 auto;
-  width: fit-content;
-  padding: 8vmin 0;
-`
-
-const TextWrapper = styled.div`
-  margin: 0 auto;
-  width: fit-content;
-`
-
-// const StyledLink = styled(Link)`
-//   border: 2px solid purple;
-//   border-radius: 3px;
-//   padding: 5px 15px;
-//   background: purple;
-// `
 
 const NotFoundPage = () => (
   <NotFoundContainer>
     <SEO title="404: Not found" />
-    <PlanetWrapper>
+    <div
+      style={{
+        margin: "0 auto",
+        width: "fit-content",
+        padding: "8vmin 0",
+      }}
+    >
       <Planet size={220} mood="sad" color="lightgrey" />
-    </PlanetWrapper>
-    <TextWrapper>
-      <h1 style={{ color: "pink" }}>NOT FOUND</h1>
+    </div>
+    <div style={{ margin: "0 auto", width: "fit-content", color: "#fff" }}>
+      <h1>NOT FOUND</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </TextWrapper>
+      <Link
+        to="/"
+        style={{
+          border: "2px solid purple",
+          borderRadius: "3px",
+          padding: "5px 15px",
+          background: "purple",
+        }}
+      >
+        Go back to the homepage
+      </Link>
+    </div>
   </NotFoundContainer>
 )
 
