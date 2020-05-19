@@ -1,7 +1,7 @@
 import React from "react"
 import { Planet } from "react-kawaii"
 import flatMountains from "../images/flat-mountains.svg"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
@@ -38,7 +38,7 @@ const NotFoundPage = () => (
       <Planet size={220} mood="sad" color="lightgrey" />
     </PlanetWrapper>
     <TextWrapper>
-      <h1>NOT FOUND</h1>
+      <h1 style={{ color: "pink" }}>NOT FOUND</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </TextWrapper>
   </NotFoundContainer>
