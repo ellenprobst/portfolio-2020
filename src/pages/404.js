@@ -36,6 +36,8 @@ const NotFoundPage = () => (
           borderRadius: "3px",
           padding: "5px 15px",
           background: "purple",
+          color: "#fff",
+          textDecoration: "none",
         }}
       >
         Go back to the homepage

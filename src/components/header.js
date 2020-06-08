@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const LinkText = styled.a`
   text-decoration: none;
-  color: #fa7cd9;
+  color: var(--accent);
   font-size: 1.5rem;
   pointer-events: all;
 `
@@ -17,7 +17,7 @@ const TopWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  padding: 10px 45px 10px 35px;
   position: relative;
   z-index: 1;
 `

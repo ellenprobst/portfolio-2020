@@ -28,18 +28,18 @@ const StyledImg = styled.img`
 
 const LinkText = styled.a`
   text-decoration: none;
-  color: #fa7cd9;
+  color: var(--accent);
 `
 
 const SubTitle = styled.p`
   font-size: 1.5rem;
-  color: #afbad2;
+  color: var(--color-light);
   margin-top: 4rem;
   opacity: 0.5;
 `
 
 const Text = styled.p`
-  color: #afbad2;
+  color: var(--color-light);
   max-width: 1200px;
 `
 

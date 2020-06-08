@@ -48,21 +48,6 @@ const Group = ({ xy }) => {
 
   return (
     <group rotation={[0, -0.1, 0]} position-x={0.2}>
-      {isMounted &&
-        trail.map((props, index) => {
-          return (
-            <animated.line
-              position-x={props.x}
-              position-y={0}
-              position-z={(39 - index) * 0.08}
-              rotation={[0, 0, (Math.PI / 40) * index]}
-              key={index}
-            >
-              <Rectangle brightness={index} />
-            </animated.line>
-          )
-        })}
-
       {!isMounted &&
         transitions.map(({ item, key, props }, index) => {
           return (
@@ -74,6 +59,21 @@ const Group = ({ xy }) => {
               key={index}
             >
               <Rectangle brightness={index} opacity={props.opacity || 1} />
+            </animated.line>
+          )
+        })}
+
+      {isMounted &&
+        trail.map((props, index) => {
+          return (
+            <animated.line
+              position-x={props.x}
+              position-y={0}
+              position-z={(39 - index) * 0.08}
+              rotation={[0, 0, (Math.PI / 40) * index]}
+              key={index}
+            >
+              <Rectangle brightness={index} />
             </animated.line>
           )
         })}

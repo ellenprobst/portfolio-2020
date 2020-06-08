@@ -1,9 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
 
 html {
   font-family: "Poppins", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+  --color-text: ${props => (props.theme === "light" ? "#1e1d22" : "#fff")};
+  --color-background: ${props =>
+    props.theme === "light" ? "#e0dcdd" : "#1e1d22"};
+  --accent: ${props => (props.theme === "light" ? "#b30d85" : "#fa7cd9")};
+  --color-light: ${props => (props.theme === "light" ? "#45424e" : "#afbad2")};
 }
 body {
   margin: 0;
@@ -202,8 +210,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: #1e1d22;
-  color: #ffffff;
+  background: var(--color-background);
+  color: var(--color-text);
   font-weight: 300;
   word-wrap: break-word;
   font-kerning: normal;
@@ -619,3 +627,7 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+`
+
+export default GlobalStyle

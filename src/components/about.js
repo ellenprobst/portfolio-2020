@@ -35,7 +35,7 @@ const GridMain = styled.div`
   grid-row: 3/4;
   padding: 3vmin;
   grid-column-gap: 50px;
-  color: #afbad2;
+  color: var(--color-light);
   position: relative;
   @media (max-width: 768px) {
     padding: 20px 0;
