@@ -23,7 +23,7 @@ const Section = styled.section`
 
 const StyledButton = styled.button`
   position: fixed;
-  top: 15px;
+  top: 12.5px;
   right: 15px;
   background: transparent;
   border: none;
@@ -31,13 +31,29 @@ const StyledButton = styled.button`
   width: 25px;
   z-index: 1;
 
+  @media (max-width: 500px) {
+    top: 6.5px;
+    right: 5px;
+    width: 20px;
+  }
+
   svg {
     display: block;
   }
 `
 
 const IndexPage = () => {
-  const [theme, setTheme] = useState("dark")
+  const prefersDark =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  const defaultTheme = !window.matchMedia
+    ? "dark"
+    : prefersDark
+    ? "dark"
+    : "light"
+
+  console.log(prefersDark, defaultTheme, window.matchMedia)
+  const [theme, setTheme] = useState(defaultTheme)
 
   return (
     <>

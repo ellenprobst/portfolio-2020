@@ -20,6 +20,10 @@ const TopWrapper = styled.div`
   padding: 10px 45px 10px 35px;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 500px) {
+    padding: 10px 25px 10px 15px;
+  }
 `
 
 const FlexContainer = styled.div`

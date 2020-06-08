@@ -42,7 +42,7 @@ const GridMain = styled.div`
     grid-column-gap: 0;
     grid-row: 2/4;
     grid-column: 1/5;
-    background: #1f1d23;
+    background: var(--color-background);
   }
 `
 
