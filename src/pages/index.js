@@ -43,17 +43,16 @@ const StyledButton = styled.button`
 `
 
 const IndexPage = () => {
-  const prefersDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  const defaultTheme = !window.matchMedia
-    ? "dark"
-    : prefersDark
-    ? "dark"
-    : "light"
+  // const prefersDark =
+  //   window.matchMedia &&
+  //   window.matchMedia("(prefers-color-scheme: dark)").matches
+  // const defaultTheme = !window.matchMedia
+  //   ? "dark"
+  //   : prefersDark
+  //   ? "dark"
+  //   : "light"
 
-  console.log(prefersDark, defaultTheme, window.matchMedia)
-  const [theme, setTheme] = useState(defaultTheme)
+  const [theme, setTheme] = useState("dark")
 
   return (
     <>
