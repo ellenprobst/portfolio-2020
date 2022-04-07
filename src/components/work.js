@@ -50,7 +50,7 @@ const Work = () => (
     <Text>
       I'm a web developer currently working at{" "}
       <LinkText href="https://www.twg.io" target="_blank" rel="noreferrer">
-        TWG
+        TWG/Deloitte
       </LinkText>
       . I love building clean and user friendly experiences. I work a lot with
       Javascript and CSS, building Node and React applications.

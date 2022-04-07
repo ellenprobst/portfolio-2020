@@ -50,6 +50,12 @@ const GridTextWrap = styled.div`
   max-width: 800px;
   position: relative;
 `
+
+const LinkText = styled.a`
+  text-decoration: none;
+  color: var(--accent);
+`
+
 const About = () => {
   return (
     <div style={{ position: "relative", zIndex: 3 }}>
@@ -69,14 +75,38 @@ const About = () => {
         <GridMain>
           <GridTextWrap>
             <p>
-              I was born and raised in Belgium, spent a year in Southeast Asia
-              and Australia/New Zealand before ending up in Canada. I'm
-              currently working out of Toronto.
+              I was born and raised in Belgium, spent some time travelling
+              before ending up in Canada. I started taking coding classes and
+              decided to make a career change into tech. I'm currently working
+              out of Toronto.
             </p>
 
             <p>
-              I love spending my free time doing creative coding, travel
-              photography and painting.
+              I love spending my free time doing{" "}
+              <LinkText
+                href="https://codepen.io/EllenProbst"
+                target="_blank"
+                rel="noreferrer"
+              >
+                creative coding
+              </LinkText>
+              ,{" "}
+              <LinkText
+                href="https://www.flickr.com/photos/ellenprobst/albums/72157648635708889"
+                target="_blank"
+                rel="noreferrer"
+              >
+                travel photography
+              </LinkText>{" "}
+              and{" "}
+              <LinkText
+                href="https://www.instagram.com/_eprobst/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                painting
+              </LinkText>
+              .
             </p>
           </GridTextWrap>
         </GridMain>
