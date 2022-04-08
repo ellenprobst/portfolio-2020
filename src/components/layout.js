@@ -5,6 +5,10 @@ import Header from "./header"
 
 import styled from "styled-components"
 
+const PageLayout = styled.div`
+  background: var(--color-background);
+`
+
 const Footer = styled.footer`
   color: var(--color-light);
   font-size: 12;
@@ -26,7 +30,7 @@ const Wrapper = styled.div`
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <PageLayout>
       <div>
         <Header />
       </div>
@@ -38,7 +42,7 @@ const Layout = ({ children }) => {
       <Footer>
         © {new Date().getFullYear()} - code and design by Ellen Probst
       </Footer>
-    </>
+    </PageLayout>
   )
 }
 
