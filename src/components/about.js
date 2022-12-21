@@ -108,6 +108,13 @@ const About = () => {
               </LinkText>
               .
             </p>
+<p>I also run a little web shop with <LinkText
+                href="https://www.shop.ellenprobst.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                cyanotype photo prints
+              </LinkText>. </p>
           </GridTextWrap>
         </GridMain>
       </GridContainer>
