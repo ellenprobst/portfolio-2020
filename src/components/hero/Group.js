@@ -7,7 +7,7 @@ const fast = { tension: 1200, friction: 40 }
 const slow = { mass: 1, tension: 800, friction: 160 }
 
 const enter = i => ({
-  z: i * 0.08,
+  z: i * 0.05,
 })
 const from = i => ({
   z: -Math.pow(i * 0.45, 2),
