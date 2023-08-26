@@ -76,47 +76,23 @@ const About = () => {
           <GridTextWrap>
             <p>
               I was born and raised in Belgium, spent some time travelling
-              before ending up in Canada. I started taking coding classes and
-              decided to make a career change into tech. I'm currently working
-              out of Toronto.
+              before ending up in Canada. In 2017 I started taking coding
+              classes and decided to make a career change into tech. I'm
+              currently working out of Toronto.
             </p>
 
+            <p>I love spending my free time outdoors or being creative .</p>
             <p>
-              I love spending my free time doing{" "}
+              I also run a little{" "}
               <LinkText
-                href="https://codepen.io/EllenProbst"
-                target="_blank"
-                rel="noreferrer"
-              >
-                creative coding
-              </LinkText>
-              ,{" "}
-              <LinkText
-                href="https://www.flickr.com/photos/ellenprobst/albums/72157648635708889"
-                target="_blank"
-                rel="noreferrer"
-              >
-                travel photography
-              </LinkText>{" "}
-              and{" "}
-              <LinkText
-                href="https://www.instagram.com/_eprobst/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                painting
-              </LinkText>
-              .
-            </p>
-<p>I also run a little  <LinkText
                 href="https://www.shop.ellenprobst.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 web shop
-              </LinkText> with 
-                cyanotype photo prints
-            . </p>
+              </LinkText>{" "}
+              with cyanotype photo prints .{" "}
+            </p>
           </GridTextWrap>
         </GridMain>
       </GridContainer>

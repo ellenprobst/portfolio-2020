@@ -1,12 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import deloitteLogo from "../images/amazon-logo.png"
-import amazonLogo from "../images/deloitte-logo.png"
-import cziLogo from "../images/czi-logo.png"
-import clcLogo from "../images/clc-logo.png"
-import tdLogo from "../images/td-logo.png"
-import loyaltyLogo from "../images/loyalty-logo.png"
 import AngleRight from "../images/angle-right-solid.js"
 
 const FlexContainer = styled.div`
@@ -53,13 +47,8 @@ const Work = () => (
       applications.
     </Text>
     <Text>
-      I have published and maintain my own mobile app,{" "}
-      <LinkText
-        style={{ fontSize: "1.5rem" }}
-        href="https://therapeze.app"
-        target="_blank"
-        rel="noreferrer"
-      >
+      I have published and maintain my own mobile app{" "}
+      <LinkText href="https://therapeze.app" target="_blank" rel="noreferrer">
         Therapeze
       </LinkText>{" "}
       , an app for therapy clients to keep track of their sessions and notes.
@@ -77,14 +66,10 @@ const Work = () => (
     >
       See my Codepens <AngleRight />
     </LinkText>
-    <SubTitle>Companies I have worked with:</SubTitle>
-
-    <FlexContainer>
-      <StyledImg src={cziLogo} alt="Chan Zuckerberg Initiative" />
-      <StyledImg src={loyaltyLogo} alt="Loyalty One" />
-      <StyledImg src={amazonLogo} alt="Amazon" />
-      <StyledImg src={deloitteLogo} alt="Deloitte" />
-    </FlexContainer>
+    <SubTitle>
+      Companies I have worked with: Toronto Dominion (TD), Chan Zuckerberg
+      Initiative (CZI), Amazon, LoyaltyOne, Canada Learning Code, Deloitte
+    </SubTitle>
   </div>
 )
 
