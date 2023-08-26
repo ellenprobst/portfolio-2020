@@ -27,7 +27,7 @@ const Rectangle = ({ x = 0, y = 0, width = 2.7, height = 2.7, ...props }) => {
     },
     [getRoundedRect]
   )
-  const color = `hsl(323, 56%, ${50 - Math.round(props.brightness)}%)`
+  const color = `hsl(323, 56%, ${70 - Math.round(props.brightness)}%)`
 
   return (
     <>
