@@ -16,8 +16,6 @@ const FlexContainer = styled.div`
 
 const StyledImg = styled.img`
   align-self: center;
-  filter: grayscale(100%);
-  mix-blend-mode: luminosity;
 
   &:not(:first-child) {
     margin-left: 8px;
@@ -55,16 +53,16 @@ const Work = () => (
       applications.
     </Text>
     <Text>
-      I have published and maintain my own mobile app for therapy clients to
-      keep track of their sessions and notes.
+      I have published and maintain my own mobile app,{" "}
       <LinkText
         style={{ fontSize: "1.5rem" }}
         href="https://therapeze.app"
         target="_blank"
         rel="noreferrer"
       >
-        Therapeze <AngleRight />
-      </LinkText>
+        Therapeze
+      </LinkText>{" "}
+      , an app for therapy clients to keep track of their sessions and notes.
     </Text>
     <Text>
       I’m also a lead mentor at Juno College of Technology and occasional
@@ -83,8 +81,6 @@ const Work = () => (
 
     <FlexContainer>
       <StyledImg src={cziLogo} alt="Chan Zuckerberg Initiative" />
-      <StyledImg src={clcLogo} alt="Canada Learning Code" />
-      <StyledImg src={tdLogo} alt="Toronto Dominion" />
       <StyledImg src={loyaltyLogo} alt="Loyalty One" />
       <StyledImg src={amazonLogo} alt="Amazon" />
       <StyledImg src={deloitteLogo} alt="Deloitte" />
