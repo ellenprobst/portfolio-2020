@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import deloitteLogo from "../images/amazon-logo.png"
+import amazonLogo from "../images/deloitte-logo.png"
 import cziLogo from "../images/czi-logo.png"
 import clcLogo from "../images/clc-logo.png"
 import tdLogo from "../images/td-logo.png"
@@ -48,12 +50,21 @@ const Work = () => (
     <h2>Work</h2>
 
     <Text>
-      I'm a web developer currently working at{" "}
-      <LinkText href="https://www.twg.io" target="_blank" rel="noreferrer">
-        TWG/Deloitte
+      I love building clean and user friendly experiences. I mostly work with
+      Javascript and CSS, building Node and React/ReactNative/Angular
+      applications.
+    </Text>
+    <Text>
+      I have published and maintain my own mobile app for therapy clients to
+      keep track of their sessions and notes.
+      <LinkText
+        style={{ fontSize: "1.5rem" }}
+        href="https://therapeze.app"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Therapeze <AngleRight />
       </LinkText>
-      . I love building clean and user friendly experiences. I work a lot with
-      Javascript and CSS, building Node and React applications.
     </Text>
     <Text>
       I’m also a lead mentor at Juno College of Technology and occasional
@@ -71,10 +82,12 @@ const Work = () => (
     <SubTitle>Companies I have worked with:</SubTitle>
 
     <FlexContainer>
-      <StyledImg src={cziLogo} alt="Chan ZUckerberg Initiative" />
+      <StyledImg src={cziLogo} alt="Chan Zuckerberg Initiative" />
       <StyledImg src={clcLogo} alt="Canada Learning Code" />
       <StyledImg src={tdLogo} alt="Toronto Dominion" />
       <StyledImg src={loyaltyLogo} alt="Loyalty One" />
+      <StyledImg src={amazonLogo} alt="Amazon" />
+      <StyledImg src={deloitteLogo} alt="Deloitte" />
     </FlexContainer>
   </div>
 )
