@@ -75,23 +75,12 @@ const About = () => {
         <GridMain>
           <GridTextWrap>
             <p>
-              I was born and raised in Belgium, spent some time travelling
-              before ending up in Canada. In 2017 I started taking coding
-              classes and decided to make a career change into tech. I'm
-              currently working out of Toronto.
-            </p>
-
-            <p>I love spending my free time outdoors or being creative .</p>
-            <p>
-              I also run a little{" "}
-              <LinkText
-                href="https://www.shop.ellenprobst.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                web shop
-              </LinkText>{" "}
-              with cyanotype photo prints .{" "}
+              Hey there! I'm originally from Belgium, but these days you'll find
+              me in Toronto, Canada. Back in 2017, I decided to switch things up
+              and started learning how to code. It's been a great journey! When
+              I'm not busy coding, you can bet I'm out and about, enjoying the
+              great outdoors. I also love to get creative in my free time. Let's
+              team up and create some awesome web experiences together!
             </p>
           </GridTextWrap>
         </GridMain>
