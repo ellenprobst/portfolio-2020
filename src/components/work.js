@@ -47,12 +47,22 @@ const Work = () => (
       applications.
     </Text>
     <Text>
-      I have published and maintain my own mobile app{" "}
+      I built and maintain two mobile app:{" "}
       <LinkText href="https://therapeze.app" target="_blank" rel="noreferrer">
         Therapeze
       </LinkText>{" "}
-      , an app for therapy clients to keep track of their sessions and notes.
+      and{" "}
+      <LinkText
+        href="https://play.google.com/store/apps/details?id=com.lakesidecoding.moodwise&hl=en&gl=US"
+        target="_blank"
+        rel="noreferrer"
+      >
+        MoodWise
+      </LinkText>
+      . An app for therapy clients to keep track of their sessions and a mood
+      tracker.
     </Text>
+
     <Text>
       I’m also a lead mentor at Juno College of Technology and occasional
       teacher at Canada Learning Code.
