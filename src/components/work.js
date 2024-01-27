@@ -78,7 +78,8 @@ const Work = () => (
     </LinkText>
     <SubTitle>
       Companies I have worked with: Toronto Dominion (TD), Chan Zuckerberg
-      Initiative (CZI), Amazon, LoyaltyOne, Canada Learning Code, Deloitte
+      Initiative (CZI), Amazon, Deloitte, LoyaltyOne, Canada Learning Code,
+      Greenshield.
     </SubTitle>
   </div>
 )
