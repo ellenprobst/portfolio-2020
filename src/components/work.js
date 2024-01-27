@@ -47,7 +47,7 @@ const Work = () => (
       applications.
     </Text>
     <Text>
-      I built and maintain two mobile app:{" "}
+      I built and maintain two mobile apps:{" "}
       <LinkText href="https://therapeze.app" target="_blank" rel="noreferrer">
         Therapeze
       </LinkText>{" "}
