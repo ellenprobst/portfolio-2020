@@ -52,11 +52,7 @@ const Work = () => (
         Therapeze
       </LinkText>{" "}
       and{" "}
-      <LinkText
-        href="https://play.google.com/store/apps/details?id=com.lakesidecoding.moodwise&hl=en&gl=US"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <LinkText href="https://moodwise.app" target="_blank" rel="noreferrer">
         MoodWise
       </LinkText>
       . An app for therapy clients to keep track of their sessions and a mood
